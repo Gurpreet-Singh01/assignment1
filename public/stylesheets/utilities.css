@@ -1,0 +1,31 @@
+
+/*===Utilities used because these codes I have used more than one so it will help to reduce the code===*/
+.flex{
+    display:flex;
+}
+.item-center{
+    align-items: center;
+
+}
+.justify-between{
+    justify-content: space-between;
+}
+.btn{
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.btn-primary{
+    background: var(--primary);
+    color: var(--ternary);
+}
+.btn-primary:hover{
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+
+}

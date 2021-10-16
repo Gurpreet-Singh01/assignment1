@@ -1,0 +1,258 @@
+@import 'utilities.css';  /*===Import utilities===*/
+:root{
+  --primary:	#71DB77; /*===variables for colors===*/
+  --dark:#000000;
+  --pure:#D9D9D9;
+  --ternary:#898989;
+  --light:#F2F2F2;
+}
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+/*============HOME===============*/
+body{
+
+  font-family: 'Poppins', sans-serif;
+}
+html{
+  scroll-behavior: smooth;  /*===For smooth scrolling when click on buttons given at home page===*/
+}
+header{
+  background: var(--dark);
+}
+.container{
+  max-width: 1152px;
+  padding:0 15px;
+  margin:0 auto;
+
+}
+header nav .left a{
+  color: var(--pure);
+  text-decoration: none;
+  margin-right: 1rem;
+  transition: all .3s;
+}
+header nav .left a:hover{
+  color: var(--primary);  /*===Hover to change color in the background while taking cursor to text===*/
+}
+header nav{
+  padding: 2rem 0;;
+}
+header nav .logo{
+  padding: 1rem;
+  margin-right: 2rem;
+}
+.fimage{
+  color: var(--pure);
+}
+.fimage .right h1{
+  font-size: 15rem;
+  color: var(--pure);
+  margin-bottom: 0.5rem;
+}
+.fimage .right h2{
+  font-size: 1.6rem;
+  margin-left: 15rem;
+  margin-bottom: 0.5rem;
+
+}
+.fimage .right h2 span{
+  color: var(--primary);
+
+}
+.fimage .right h3{
+  margin-left: 16rem;
+}
+/*============About===============*/
+.about{
+  padding: 15rem ;
+
+}
+.about .right{
+  margin-left: 4rem;
+}
+.about .about-img{
+  height: 470px;
+  border: 4px solid var(--primary);
+
+}
+.about h1{
+  margin-bottom: 1rem;
+}
+.about h1 span{
+  color: var(--primary);
+}
+.about h3{
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+.about p{
+  font-family: 'Red Rose', cursive;
+  color: var(--ternary);
+  font-size: 1.3rem;
+}
+/*============Skill===============*/
+.skill{
+  background-color: var(--dark);
+}
+.skill .skill-heading{
+  color: var(--ternary);
+  padding: 6rem 0 10rem;
+  text-align: center;
+  font-size: 2.9rem;
+}
+.skill .sub-heading{
+  color: var(--light);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  padding: 0 6rem;
+
+}
+.skill .skill-name{
+  display: inline-block;  /*===To show skill-name in same row===*/
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  padding: .25rem .5rem;
+  color: var(--ternary);
+  font-size: 1.5rem;
+  background-color: var(--dark);
+  border-radius: .25rem;
+  margin-bottom: 12rem;
+}
+.skill-name:hover{
+  background-color: var(--light);
+}
+
+/*============Services===============*/
+.services{
+  background: var(--pure);
+}
+.services .service-heading{
+  color: var(--dark);
+  text-align: center;
+  padding: 6rem 0 0.5rem;
+  line-height: 6rem;
+}
+.service-heading span{
+  color: var(--primary);
+
+}
+.service-heading + p{
+  text-align: center;
+  margin-bottom: 12rem;
+  color: var(--ternary);
+  font-family: 'Red Rose', cursive;
+
+}
+.services .card-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 12rem;
+  grid-row-gap: 7rem;
+  padding-bottom: 6rem;
+}
+.services .card-grid .card{
+  background: var(--light);
+  padding: 3rem 2rem;
+  position: relative;
+  padding-top: 6rem;
+  text-align: center;
+  transition: all .3s ease;
+}
+.services .card-grid .card img{
+  position: absolute;
+  top: -2.5rem;
+  left: 40%;
+  height: 90px;
+  border: 1px solid var(--ternary);
+}
+.services .card-grid .card h2{
+  font-weight: 400;
+  font-size: 1.9rem;
+  padding: 1rem;
+
+}
+.services .card-grid .card:hover{
+  background: var(--ternary);
+}
+.services .card-grid .card:hover h2{
+  color: var(--pure);
+}
+/*============Contact===============*/
+.contact-heading{
+  color: var(--dark);
+  text-align: center;
+  padding: 6rem;
+}
+.contact-heading span{
+  color: var(--primary);
+  text-align: center;
+}
+.contact .contact-grid{
+  display: grid;   /*===to show first two textarea in same row===*/
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3rem;
+}
+.contact .contact-grid .first img{
+  height: 55px;
+  margin-bottom: 1.5rem;
+}
+.contact .contact-grid .first{
+  text-align: center;
+}
+.contact .contact-grid .first h2{
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.contact .contact-grid .first h6{
+  font-size: 1rem;
+  color: var(--ternary);
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+.contact .input1{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+}
+.contact .input2{
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+}
+.contact .input2 input{
+  margin-bottom: 2rem;
+
+
+}
+.contact input{
+  padding: 0.5rem;
+  border: 2px solid var(--light);
+  font-size: 0.8rem;
+}
+.contact .input2 textarea{
+  padding: 0.5rem;
+  border: 2px solid var(--light);
+
+
+}
+.contact .contact-button{
+  text-align: center;
+  margin-top: 2rem;
+  padding: 4rem;
+}
+/*============Footer===============*/
+footer{
+  background: var(--dark);
+  text-align: center;
+  padding: 3rem 0;
+}
+footer p{
+  color: var(--light);
+}
+footer img{
+  height: 75px;
+}

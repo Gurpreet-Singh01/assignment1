@@ -1,0 +1,119 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title my portfolio
+    link(href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='css/style.css')
+  body
+    // =========Home==========
+    header#home
+      .container
+        nav.flex.item-center.justify-between
+          .left.flex.item.center
+            .logo
+              img(src='./images/logo.png' height='75' alt='')
+              a(href='#home') HOME
+              a(href='#about') ABOUT
+              a(href='#skill') SKILLS
+              a(href='#services') SERVICES
+          .right
+            a.btn.btn-primary(href='#contact' type='button') CONTACT
+        .fimage.flex.item-center
+          .left
+            img(src='./images/fimage.jpg' alt='')
+          .right
+            h1 HELLO.
+            h2
+              | I'm
+              span Gurpreet Singh
+            h3 A Junior Programmer
+    // =========About==========
+    section#about.about
+      .container.flex.item-center
+        .simage
+          img.about-img(src='./images/simage.jpg' alt='')
+        .right
+          h1
+            | ABOUT
+            span ME
+          h3 I'm Gurpreet Singh and A Junior Programmer
+          p
+            | Hi! My name is Gurpreet Singh. I belongs to Delhi, India. I am currently pursuing Advanced Diploma in Computer Programming at Georgian College.
+            | I have acquired the skills and knowledge from different platforms necessary to create your project. I enjoy learning new things and
+            | making new designs. I am very passionate and decidated to my work.
+    // =========Skill==========
+    section#skill.skill(style='background-image: url(./images/skills.jpg); background-repeat: no-repeat ; background-size: cover;')
+      .container
+        h1.skill-heading Skills
+        .left
+          .skill-box
+            h2.sub-heading Development
+            span.skill-name Html
+            span.skill-name Javascript
+            span.skill-name Java
+            span.skill-name Java Advanced
+            span.skill-name C
+            span.skill-name C++
+            h3.sub-heading Design
+            span.skill-name Css
+            span.skill-name Photoshop
+            span.skill-name Logo Creater
+    // =========Services==========
+    section#services.services
+      .container
+        h1.service-heading
+          span My
+          |  SERVICES
+        p We provide the best Services
+        .card-grid
+          .card
+            div
+              img(src='./images/webdev.png' alt='')
+              h2 Web Development
+          .card
+            div
+              img(src='./images/webdes.png' alt='')
+              h2 Web Design
+          .card
+            div
+              img(src='./images/logomaker.png' alt='')
+              h2 Logo Design
+          .card
+            div
+              img(src='./images/arduino.png' alt='')
+              h2 Arduino Projects
+    // =========Contact==========
+    section#contact.contact
+      .container
+        h1.contact-heading
+          | CONTACT
+          span  Me
+        .contact-grid
+          .first
+            img(src='./images/phone.png' alt='')
+            h2 Call Me On
+            h6 +91-8860134086
+          .first
+            img(src='./images/email.png' alt='')
+            h2 Email Me At
+            h6 virdi1235678@gmail.com
+          .first
+            img(src='./images/office.png' alt='')
+            h2 Visit Office
+            h6 Wz-14,Mbs Nagar,N.D.,India
+        form(action='')
+          .input1
+            input(type='text' placeholder='Your Name *')
+            input(type='text' placeholder='Your Email *')
+          .input2
+            input(type='text' placeholder='Your Subject....')
+            textarea(name='' id='' cols='30' rows='10' placeholder='Your Message....')
+          .contact-button
+            button.btn.btn-primary Send Message
+    // =========footer==========
+    footer
+      img(src='./images/logo.png' alt='')
+      p Copyright © Gurpreet Singh. All Right Reserved.
